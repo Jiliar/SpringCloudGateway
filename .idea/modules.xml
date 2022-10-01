@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloudGateway.iml" filepath="$PROJECT_DIR$/.idea/SpringCloudGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-reactor-eureka/spring-reactor-eureka.iml" filepath="$PROJECT_DIR$/spring-reactor-eureka/spring-reactor-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-reactor-gateway/spring-reactor-gateway.iml" filepath="$PROJECT_DIR$/spring-reactor-gateway/spring-reactor-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-reactor-micro1/spring-reactor-micro1.iml" filepath="$PROJECT_DIR$/spring-reactor-micro1/spring-reactor-micro1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-reactor-micro2/spring-reactor-micro2.iml" filepath="$PROJECT_DIR$/spring-reactor-micro2/spring-reactor-micro2.iml" />
+    </modules>
+  </component>
+</project>

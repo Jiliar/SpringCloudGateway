@@ -1,0 +1,39 @@
+server:
+  port: ${SERVER_PORT}
+
+okta:
+  oauth2:
+    issuer: ${OKTA_ISSUER}
+    client-id: ${OKTA_CLIENTID}
+    client-secret: ${OKTA_CLIENTSECRET}
+
+spring:
+  application:
+    name: ${APPLICATION_NAME}
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: m1-service
+          uri: lb://micro1
+          predicates:
+            - Path=/m1/**
+          filters:
+            - RewritePath=/m1/(?<x>.*), /$\{x}
+            - TokenRelay=
+        - id: m2-service
+          uri: lb://micro2
+          predicates:
+            - Path=/m2/**
+          filters:
+            - RewritePath=/m2/(?<x>.*), /$\{x}
+            - TokenRelay=
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

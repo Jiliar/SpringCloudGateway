@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-reactor-eureka" />
         <module name="spring-reactor-gateway" />
+        <module name="spring-reactor-eureka" />
         <module name="spring-reactor-micro2" />
         <module name="spring-reactor-micro1" />
       </profile>
@@ -17,6 +17,8 @@
       <module name="spring-reactor-eureka" target="11" />
       <module name="spring-reactor-gateway" target="11" />
       <module name="spring-reactor-micro1" target="11" />
+      <module name="spring-reactor-micro1 (1)" target="11" />
+      <module name="spring-reactor-micro1 (2)" target="11" />
       <module name="spring-reactor-micro2" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -25,6 +27,8 @@
       <module name="spring-reactor-eureka" options="-parameters" />
       <module name="spring-reactor-gateway" options="-parameters" />
       <module name="spring-reactor-micro1" options="-parameters" />
+      <module name="spring-reactor-micro1 (1)" options="-parameters" />
+      <module name="spring-reactor-micro1 (2)" options="-parameters" />
       <module name="spring-reactor-micro2" options="-parameters" />
     </option>
   </component>

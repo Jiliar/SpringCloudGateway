@@ -29,7 +29,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Okta -->
+        <!-- Okta-->
         <dependency>
             <groupId>com.okta.spring</groupId>
             <artifactId>okta-spring-boot-starter</artifactId>
